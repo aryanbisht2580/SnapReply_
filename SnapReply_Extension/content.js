@@ -17,7 +17,7 @@ const buildTheButton=()=>{
             snapReplyBtn.disabled=true;
 
             const emailContent=getEmailContent();
-            const response=await fetch("https://snapreply-lb6t.onrender.com/api/generate",{
+            const response=await fetch("https://snapreplybackend.onrender.com/api/generate",{
                 method:"POST",
                 headers:{
                     'Content-Type':"application/json",

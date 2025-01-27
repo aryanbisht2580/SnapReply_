@@ -4,7 +4,7 @@
     "version": "1.0",
     "manifest_version": 3,
     "permissions": ["storage","activeTab"],
-    "host_permissions": ["https://snapreply-lb6t.onrender.com/*","*://mail.google.com/*"], 
+    "host_permissions": ["https://snapreplybackend.onrender.com/*","*://mail.google.com/*"], 
     "icons": {
     "16": "logo.png",
     "48": "logo.png",

@@ -17,7 +17,7 @@ public class SnapReplyController {
     @Autowired
     SnapReplyService snapReplyService;
 
-    @Scheduled(fixedRate = 240000)
+    @Scheduled(fixedRate = 8*60*1000)
     public void callSelf() {
 
         snapReplyService.callItself();
@@ -34,7 +34,7 @@ public class SnapReplyController {
             String response = snapReplyService.generateSnapReply(snm);
             return new ResponseEntity<>(response,HttpStatus.OK);
         }catch (Exception e){
-            return new ResponseEntity<>(null,HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
     }
