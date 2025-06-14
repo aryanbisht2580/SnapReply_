@@ -9,7 +9,8 @@ SnapReply is a comprehensive email productivity platform that uses artificial in
 
 ### 🧩 Chrome Extension in Action
 
-<img width="622" alt="image" src="https://github.com/user-attachments/assets/5dd9eee5-b4dd-4df8-9eff-10e31953e73f" />
+<img width="660" alt="image" src="https://github.com/user-attachments/assets/476fbcfe-b133-4e73-9193-5f028072b134" />
+
 
 
 *SnapReply Chrome extension adds a SnapReply button directly in Gmail*
