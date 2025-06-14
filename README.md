@@ -38,10 +38,8 @@ SnapReply is a comprehensive email productivity platform that uses artificial in
 ### Web Application
 - **Beautiful Dashboard**: Modern, responsive interface built with React and Tailwind CSS
 - **Smooth Animations**: Enhanced user experience with Framer Motion animations
-- **Email Analytics**: Track response generation statistics and time saved
 - **Template Management**: Create and manage custom response templates
 - **Usage Insights**: Detailed analytics on email productivity improvements
-- **Account Management**: User profiles, preferences, and subscription management
 
 ## 🛠️ Tech Stack
 
@@ -62,8 +60,6 @@ SnapReply is a comprehensive email productivity platform that uses artificial in
 - **Java** - Backend programming language
 - **Google Gemini API** - AI-powered text generation
 - **Maven** - Dependency management
-- **Spring Security** - Authentication and authorization
-- **JWT** - Token-based authentication
 
 
 
@@ -178,85 +174,6 @@ The extension can be configured through the popup interface:
 5. **Edit if Needed** and send your response
 
 
-## 🏗️ Architecture
-
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│  React Web App  │    │  Spring Boot     │    │  Gemini AI      │
-│                 │◄──►│  Backend API     │◄──►│  Service        │
-│  - Analytics    │    │  - REST          │    │  - Text         │
-│  - Templates    │    │    Endpoints     │    │    Generation   │
-│  - Settings     │    │  - Email         │    │  - Context      │
-│                 │    │    Processing    │    │    Analysis     │
-└─────────────────┘    │  - User Auth     │    │                 │
-                       │  - JWT Tokens    │    │                 │
-┌─────────────────┐    │  - Analytics     │    │                 │
-│  Chrome         │    │    Tracking      │    │                 │
-│  Extension      │◄──►│                  │    │                 │
-│                 │    └──────────────────┘    └─────────────────┘
-│  - Content      │
-│    Script       │    ┌──────────────────┐
-│  - Popup UI     │    │  Database        │
-│  - Background   │◄──►│                  │
-│    Service      │    │  - User Data     │
-│                 │    │  - Templates     │
-└─────────────────┘    │  - Analytics     │
-                       │  - Usage Stats   │
-                       └──────────────────┘
-```
-
-## 📂 Project Structure
-
-```
-snapreply/
-├── webapp/                          # React Web Application
-│   ├── public/
-│   │   ├── index.html
-│   │   └── favicon.ico
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Dashboard/
-│   │   │   ├── Analytics/
-│   │   │   ├── Templates/
-│   │   │   └── Settings/
-│   │   ├── pages/
-│   │   │   ├── Home.jsx
-│   │   │   ├── Login.jsx
-│   │   │   └── Dashboard.jsx
-│   │   ├── hooks/
-│   │   ├── utils/
-│   │   ├── App.jsx
-│   │   └── index.js
-│   ├── tailwind.config.js
-│   └── package.json
-├── extension/                       # Chrome Extension
-│   ├── manifest.json
-│   ├── content.js
-│   ├── popup.html
-│   ├── popup.js
-│   ├── background.js
-│   └── styles/
-├── backend/                         # Spring Boot API
-│   ├── src/main/java/
-│   │   └── com/snapreply/
-│   │       ├── SnapReplyApplication.java
-│   │       ├── controller/
-│   │       │   ├── EmailController.java
-│   │       ├── service/
-│   │       │   ├── GeminiService.java
-│   │       │   ├── EmailService.java
-│   │       ├── model/
-│   │       │   ├── EmailTemplate.java
-│   │       │   └── Usage.java
-│   │       └── config/
-│   ├── src/main/resources/
-│   │   └── application.properties
-│   └── pom.xml
-├── docs/                           # Documentation
-├── README.md
-└── LICENSE
-```
-
 
 ## 📈 Performance
 
@@ -276,7 +193,6 @@ snapreply/
 ### Backend API
 - **Response Time**: < 500ms for most endpoints
 - **Gemini API Integration**: Optimized request batching
-- **Database Queries**: Indexed and optimized
 - **Concurrent Users**: Supports 1000+ simultaneous users
 
 ## 🔒 Privacy & Security
